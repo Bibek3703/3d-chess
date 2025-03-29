@@ -14,7 +14,7 @@ const GameControls = () => {
     return (
         <div className="flex items-center justify-between w-full mb-4">
             <div className="flex items-center gap-3">
-                <p className="text-sm font-semibold">
+                <p className="text-sm font-semibold text-primary-foreground">
                     {gameStatus === "idle" || gameStatus === "paused"
                         ? "Start Game"
                         : "Reset Game"}

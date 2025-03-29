@@ -1,6 +1,7 @@
 "use client";
 
 import Chess from "@/components/Chess";
+import Background from "@/components/chess/Background";
 import Commentry from "@/components/chess/Commentry";
 import GameControls from "@/components/chess/GameControls";
 import GameLevel from "@/components/chess/GameLevel";
@@ -21,7 +22,10 @@ export default function Home() {
               proximity={64}
               inactiveZone={0.01}
             />
-            <div className="relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl border-0.75 p-6 shadow-[0px_0px_27px_0px_#2D2D2D] md:p-6">
+            <div className="relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl border-0.75 p-6 shadow-[0px_0px_27px_0px_#2D2D2D] md:p-6 border border-[#2D2D2D]">
+              <div className="absolute top-0 right-0 w-full h-full">
+                <Background />
+              </div>
               <div className="absolute top-2 right-4">
                 <GameStatus />
               </div>

@@ -142,7 +142,7 @@ export default function ChessProvider(
         return () => {
             clearInterval(interval);
         };
-    }, [chess, gameStatus, timerRef]);
+    }, [chess]);
 
     const squareToPosition = useCallback((square: string) => {
         return convertSquareToPosition(square, squareSize, halfSize);
@@ -211,7 +211,7 @@ export default function ChessProvider(
         } else if (gameStatus === "paused") {
             setGameStatus("ongoing");
         }
-    }, [gameStatus, timerRef]);
+    }, []);
 
     // Make computer move with varying difficulty
     const makeComputerMove = useCallback(() => {

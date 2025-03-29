@@ -18,9 +18,7 @@ function GameLevel() {
                     "relative w-28 h-32 rounded-lg overflow-hidden cursor-pointer hover:bg-transparent",
                     "bg-gradient-to-br from-white/5 to-white/20",
                     "hover:from-white/5 hover:to-white/20",
-                    skillLevel === "beginner"
-                        ? "ring-primary"
-                        : "ring-white/20",
+                    skillLevel === "beginner" ? "ring-white" : "ring-white/20",
                 )}
                 onClick={() => setSkillLevel("beginner")}
             >
@@ -63,7 +61,7 @@ function GameLevel() {
                     "bg-gradient-to-br from-white/5 to-white/20",
                     "hover:from-white/5 hover:to-white/20",
                     skillLevel === "intermediate"
-                        ? "ring-primary"
+                        ? "ring-white"
                         : "ring-white/20",
                 )}
                 onClick={() => setSkillLevel("intermediate")}
@@ -106,9 +104,7 @@ function GameLevel() {
                     "relative w-28 h-32 rounded-lg overflow-hidden cursor-pointer hover:bg-transparent",
                     "bg-gradient-to-br from-white/5 to-white/20",
                     "hover:from-white/5 hover:to-white/20",
-                    skillLevel === "advanced"
-                        ? "ring-primary"
-                        : "ring-white/20",
+                    skillLevel === "advanced" ? "ring-white" : "ring-white/20",
                 )}
                 onClick={() => setSkillLevel("advanced")}
             >

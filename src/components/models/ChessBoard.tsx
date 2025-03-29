@@ -1,3 +1,5 @@
+"use client";
+
 import { PieceColor, PieceType } from "@/types/chess";
 import { ThreeElements, useFrame, useThree } from "@react-three/fiber";
 import React, { useRef } from "react";
@@ -171,8 +173,6 @@ const ChessBoard = (
         };
     }, [gl, raycaster, mouse, camera, handleSquareClick]);
 
-    console.log({ fileLabels });
-
     return (
         <group
             {...props}
@@ -210,10 +210,13 @@ const ChessBoard = (
                     color="#000000"
                     anchorX="center"
                     anchorY="middle"
+                    font={"https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwK4vaqI.woff"}
+                    castShadow
                 >
                     {userColor === "b" ? fileLabels[7 - i] : label}
                 </Text>
             ))}
+
             {/* Rank (row) labels */}
             {rankLabels.map((label, i) => (
                 <Text
