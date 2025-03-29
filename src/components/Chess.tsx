@@ -8,7 +8,6 @@ import {
     OrbitControls,
     PerspectiveCamera,
 } from "@react-three/drei";
-import Stars from "./models/Stars";
 import ChessBoard from "./models/ChessBoard";
 
 function Chess() {
